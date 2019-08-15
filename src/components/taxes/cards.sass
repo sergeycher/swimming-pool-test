@@ -1,0 +1,70 @@
+.card
+    background: #F9F9F9;
+    border-radius: 5px;
+    // width: 240px;
+    height: 256px;
+
+.cards-deck
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    padding-bottom: 40px;
+
+.tax-card
+    position: relative;
+
+    .header
+        position: absolute;
+        top: 52px;
+        left: 6px;
+        right: 6px;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #215968;
+
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+
+        p
+            padding: 0;
+            margin: 0;
+            line-height: inherit;
+
+            &:first-child
+                text-transform: uppercase;
+
+    .details
+        position: absolute;
+        top: 102px;
+        left: 6px;
+        right: 6px;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: #246169;
+
+        p
+            padding: 0;
+            margin: 0;
+            line-height: inherit;
+    
+    .select-button
+        position: absolute;
+        top: 144px;
+        left: 6px;
+        right: 6px;
+
+    .footer
+        position: absolute;
+        width: 100%;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+
+        color: #33856B;
+        bottom: 38px;

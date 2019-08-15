@@ -1,0 +1,48 @@
+.navbar
+    margin: 0;
+    padding: 0;
+    display: grid;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    // grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+
+    li 
+        display: block;
+        // padding: 1em;
+        // height: 100px;
+
+        a 
+            height: 100%;
+            display: grid;
+            // grid-template-rows: 50px 50px;
+            // grid-template-columns: 1fr;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 13px;
+            text-align: center;
+            text-decoration: none;
+            color: #215968;
+            border-bottom: 2px transparent;
+
+            .navtext
+                padding-top: 0.6em;
+                height: 50px;
+                box-sizing: border-box;
+
+                p
+                    padding: 0;
+                    margin: 0;
+                
+                @media only screen and (max-width: 480px)
+                    display: none;
+
+            .navicon 
+                height: 50px;
+                background: no-repeat transparent center center;
+
+            &.selected 
+                border-bottom: 2px solid #215968;
